@@ -23,7 +23,7 @@
     }
 
     button {
-      background: linear-gradient(to right, #006400, #32CD32); /* vert foncé -> vert clair */
+      background: linear-gradient(to right, #006400, #32CD32); /* #498e9a -> #e2b64f */
       color: white;
       font-size: 18px;
       padding: 10px 30px;
@@ -60,7 +60,7 @@
       .then(response => response.json())
       .then(data => {
         audio.src = data.stream;
-        playPauseBtn.textContent = "Play Pouillettes ▶";
+        playPauseBtn.textContent = "Play Dancefloor ▶";
         
         playPauseBtn.addEventListener("click", function () {
           if (audio.paused) {
@@ -68,7 +68,7 @@
             playPauseBtn.textContent = "Pause ⏸";
           } else {
             audio.pause();
-            playPauseBtn.textContent = "Play Pouillettes ▶";
+            playPauseBtn.textContent = "Play Dancefloor ▶";
           }
         });
       })
